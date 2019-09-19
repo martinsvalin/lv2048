@@ -5,11 +5,11 @@ body {
     color: #776e65;
 }
 
-h3.score {
+h3.moves {
     color: darkred;
 }
 
-section.cells {
+section.grid {
     display: grid;
     grid-template-columns: 106px 106px 106px 106px;
     grid-gap: 15px;
@@ -18,7 +18,7 @@ section.cells {
     background: #bbada0;
     width: min-content;
 }
-section.cells > div {
+section.grid > div {
     height: 106px;
     border-radius: 3px;
     display: flex;
@@ -28,7 +28,7 @@ section.cells > div {
     font-weight: bold;
 }
 
-.cell-1     { background: rgba(238, 228, 218, 0.35); color: rgba(0,0,0,0); }
+.cell-empty { background: rgba(238, 228, 218, 0.35); color: rgba(0,0,0,0); }
 .cell-2     { background: #eee4da; font-size: 55px; }
 .cell-4     { background: #ede0c8; font-size: 55px; }
 .cell-8     { background: #f2b179; color: #f9f6f2; font-size: 55px; }
