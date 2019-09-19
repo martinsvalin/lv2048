@@ -18,6 +18,7 @@ defmodule Lv2048Web.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    live "/2048", Lv2048Live
   end
 
   # Other scopes may use custom stacks.

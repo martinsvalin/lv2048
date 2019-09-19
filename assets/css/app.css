@@ -1,3 +1,100 @@
 /* This file is for your main application css. */
 
 @import "./phoenix.css";
+body {
+    color: #776e65;
+}
+
+h3.score {
+    color: darkred;
+}
+
+section.cells {
+    display: grid;
+    grid-template-columns: 106px 106px 106px 106px;
+    grid-gap: 15px;
+    margin: -1%;
+    padding: 20px;
+    background: #bbada0;
+    width: min-content;
+}
+section.cells > div {
+    height: 106px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+}
+
+.cell-1     { background: rgba(238, 228, 218, 0.35); color: rgba(0,0,0,0); }
+.cell-2     { background: #eee4da; font-size: 55px; }
+.cell-4     { background: #ede0c8; font-size: 55px; }
+.cell-8     { background: #f2b179; color: #f9f6f2; font-size: 55px; }
+.cell-16    { background: #f59563; color: #f9f6f2; font-size: 55px; }
+.cell-32    { background: #f67c5f; color: #f9f6f2; font-size: 55px; }
+.cell-64    { background: #f65e3b; color: #f9f6f2; font-size: 55px; }
+.cell-128   {
+    background: #edcf72;
+    color: #f9f6f2;
+    font-size: 45px;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
+}
+.cell-256   { 
+    background: #edcc61;
+    color: #f9f6f2;
+    font-size: 45px;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
+}
+.cell-512   {
+    background: #edc850;
+    color: #f9f6f2;
+    font-size: 45px;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
+}
+.cell-1024  {
+    background: #edc53f;
+    color: #f9f6f2;
+    font-size: 35px;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
+}
+.cell-2048  {
+    background: #edc22e;
+    color: #f9f6f2;
+    font-size: 35px;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+}
+.cell-4096  {
+    background: rgb(240, 100, 110);
+    color: #f9f6f2;
+    font-size: 35px;
+    box-shadow: 0 0 30px 10px rgba(240, 200, 210, 0.25),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+}
+.cell-8192  {
+    background: rgb(235, 80, 90);
+    color: #f9f6f2;
+    font-size: 35px;
+    box-shadow: 0 0 30px 10px rgba(235, 180, 190, 0.3),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+}
+.cell-16384  {
+    background: rgb(235, 67, 72);
+    color: #f9f6f2;
+    font-size: 30px;
+    box-shadow: 0 0 30px 10px rgba(235, 167, 172, 0.4),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+}
+.cell-32768  {
+    background: rgb(120, 175, 210);
+    color: #f9f6f2;
+    font-size: 30px;
+    box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.3),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+}
